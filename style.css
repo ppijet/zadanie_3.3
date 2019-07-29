@@ -1,0 +1,374 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: "open sans", sans-serif;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col-"] {
+    float: left;
+    height: 100%;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-margin-0 {margin-left: 0;}
+.col-margin-1 {margin-left: 8.33%;}
+.col-margin-2 {margin-left: 12.5%;}
+.col-margin-3 {margin-left: 16.66%;}
+.col-margin-4 {margin-left: 25%;}
+.col-margin-5 {margin-left: 33.33%;}
+.col-margin-6 {margin-left: 41.66%}
+.col-margin-7 {margin-left: 50%;}
+.col-margin-8 {margin-left: 58.33%;}
+.col-margin-9 {margin-left: 66.66%;}
+.col-margin-10 {margin-left: 75%;}
+.col-margin-11 {margin-left: 83.33%;}
+.col-margin-12 {margin-left: 91.66%;}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background: #313234;
+    height: 50px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.logo {
+    height: 250px;
+}
+
+header > nav i {
+    font-size: 50px;
+    margin-top: -110px;
+}
+
+header > nav img {
+    padding: 10px 0;
+}
+
+header > nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+header > nav ul > li {
+    display: inline-block;
+}
+
+header > nav ul > li >a {
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+    background-color: #999;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center -330px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+.slogan {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: 230px;
+    margin-right: 10px;
+    width: 45vw;
+    max-width: 800px;
+    padding: 10px 50px;
+    transition: ease-out 1s;
+    color: #fff;
+    text-align: center;
+}
+.skra {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: 30px;
+    width: 45vw;
+    max-width: 800px;
+    padding: 10px 50px;
+    transition: font-size 1s;
+    color: #fff;
+    text-align: center;
+}
+
+.skra:hover {
+    font-size: 40px;
+}
+
+.dyscypliny {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.text>i {
+    font-size: 40px;
+}
+.dyscypliny div:nth-of-type(2){
+    color: #0000ff;
+}
+
+
+.text h4, .text p {
+    margin: 5px;
+    padding: 0;
+}
+.text p {
+    font-size: 12px;
+    color: black;
+}
+.dyscypliny h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.dyscypliny p {
+    margin: auto 50px;
+    text-align: justify;
+    text-align-last: center;
+}
+.motto {
+    width: 100%;
+    margin-bottom: 50px;
+    height: 100%;
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+.motto h2 {
+    text-transform: uppercase;
+}
+
+.layer {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    word-spacing: 15px;
+    font-size: 10px;
+    position: relative;
+    left: 35%;
+    top: 50%;
+    transition: 1.5s;
+}
+
+.layer i {
+    padding: 4px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #B0BDC2;
+    border-radius: 5px;
+}
+
+.gallery {
+    width: 100%;
+    height: 150px;
+}
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .7s;
+}
+.gallery [class*="col-"]:hover img{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.gallery [class*="col-"]:hover .layer {
+    opacity: 1;
+}
+
+.zespol {
+    width: 100%;
+    height: 220px;
+    margin-top: 600px;
+}
+
+.stanowisko {
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, white 5px, grey 5px);
+    background: -webkit-radial-gradient(circle, white 5px, grey 5px);
+    background-size: 10px;
+    border: 1px solid grey;
+    transition: 1s;
+}
+
+.stanowisko:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.zespol p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px;
+    object-fit: cover;
+    margin-top: 60px;
+    margin-left: -15px;
+}
+
+.photo h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 90px;
+    text-align: center;
+}
+.photo p {
+    margin: auto 20px;
+    text-align: justify;
+    text-align: center;
+}
+
+.numbers {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+.numbers h3 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+.numbers p {
+    margin-top: 5px;
+    color: #2EBBE6;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+footer .contact h2 {
+    text-transform: uppercase;
+}
+
+footer .contact table {
+    margin-left: 65px;
+}
+
+.icon-btn {
+    width: 75px;
+    height: 75px;
+    border: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: #ffffff;
+}
+
+.twitter {
+    color: #4099ff;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.instagram {
+    color: #5c3d2e;
+}
+
+.social {
+    text-align: center;
+}
+
+.icon-btn:hover {
+    transform: scale(1.10);
+    transition: ease-in-out .3s;
+}
+
+.twitter:hover {
+    background-color: #4099ff;
+    color: #fff;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.instagram:hover {
+    background-color: #5c3d2e;
+    color: #fff;
+}
+
+footer {
+    padding: 0px;
+    width: 100%;
+    float:left;
+    height: 270px;
+    background: slategray ;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+.stopka p {
+    background-color: #313234;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+
+
+
+
